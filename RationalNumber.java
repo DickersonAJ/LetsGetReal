@@ -18,7 +18,7 @@ public class RationalNumber extends RealNumber{
   }
 
   public double getValue(){
-    return numerator/denominator;
+    return numerator*1.0/denominator*1.0;
   }
 
   public int getNumerator(){

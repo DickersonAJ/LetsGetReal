@@ -35,6 +35,10 @@ public class Tester {
     System.out.println(dog);
     System.out.println(monkey);
     System.out.println(mantisShrimp);
+    System.out.println(cat.getValue());
+    System.out.println(dog.getValue());
+    System.out.println(mantisShrimp.getNumerator());
+    System.out.println(mantisShrimp.getDenominator());
   }
 
 }
