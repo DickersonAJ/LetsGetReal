@@ -38,4 +38,15 @@ public class RationalNumber extends RealNumber{
     return ""+numerator+"/"+denominator;
   }
 
+  public static int gcd(int a, int b){
+    if (a<b) {
+      return gcd(b,a);
+    }
+    int r = a%b;
+    if (r == 0) {
+      return b;
+    }
+    return gcd(b,r);
+  }
+
 }

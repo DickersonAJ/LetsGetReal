@@ -40,6 +40,7 @@ public class Tester {
     System.out.println(mantisShrimp.getNumerator());
     System.out.println(mantisShrimp.getDenominator());
     System.out.println(mantisShrimp.reciprocal());
+    System.out.println(RationalNumber.gcd(210, 45));
   }
 
 }
