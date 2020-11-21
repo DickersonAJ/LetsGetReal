@@ -25,4 +25,9 @@ public class RealNumber {
     return n;
   }
 
+  public RealNumber multiply(RealNumber other){
+    RealNumber n = new RealNumber(value * other.getValue());
+    return n;
+  }
+
 }

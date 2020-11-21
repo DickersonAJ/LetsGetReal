@@ -15,6 +15,8 @@ public class Tester {
     System.out.println(a.equals(b));
     System.out.println(x.add(y));
     System.out.println(x.add(z));
+    System.out.println(x.multiply(y));
+    System.out.println(x.multiply(a));
   }
 
 }
