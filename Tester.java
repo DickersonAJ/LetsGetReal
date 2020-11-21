@@ -1,6 +1,8 @@
 public class Tester {
 
   public static void main(String[] args){
+    //RealNumber Tester
+    System.out.println("RealNumber Tester");
     RealNumber x = new RealNumber(3);
     RealNumber y = new RealNumber(4);
     RealNumber z = new RealNumber(3.000001);
@@ -23,6 +25,16 @@ public class Tester {
     System.out.println(x.subtract(y));
     System.out.println(x.subtract(a));
     System.out.println(a.subtract(x));
+    //RationalNumber Tester
+    System.out.println("RationalNumber Tester");
+    RationalNumber cat = new RationalNumber(3, 0);
+    RationalNumber dog = new RationalNumber(5, 2);
+    RationalNumber monkey = new RationalNumber(9, -2);
+    RationalNumber mantisShrimp = new RationalNumber(-9, 2);
+    System.out.println(cat);
+    System.out.println(dog);
+    System.out.println(monkey);
+    System.out.println(mantisShrimp);
   }
 
 }
