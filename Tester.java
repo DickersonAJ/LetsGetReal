@@ -17,6 +17,12 @@ public class Tester {
     System.out.println(x.add(z));
     System.out.println(x.multiply(y));
     System.out.println(x.multiply(a));
+    System.out.println(x.divide(y));
+    System.out.println(x.divide(a));
+    System.out.println(a.divide(x));
+    System.out.println(x.subtract(y));
+    System.out.println(x.subtract(a));
+    System.out.println(a.subtract(x));
   }
 
 }
