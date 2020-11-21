@@ -13,6 +13,8 @@ public class Tester {
     System.out.println(x.equals(z));
     System.out.println(x.equals(a));
     System.out.println(a.equals(b));
+    System.out.println(x.add(y));
+    System.out.println(x.add(z));
   }
 
 }
