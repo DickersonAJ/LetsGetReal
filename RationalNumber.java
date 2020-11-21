@@ -7,7 +7,7 @@ public class RationalNumber extends RealNumber{
       numerator = 0;
       denominator = 1;
     }
-    else if (deno == 0) {
+    else if (deno < 0) {
       numerator = 0 - nume;
       denominator = 0 - deno;
     }
@@ -32,6 +32,10 @@ public class RationalNumber extends RealNumber{
   public RationalNumber reciprocal(){
     RationalNumber r = new RationalNumber(denominator, numerator);
     return r;
+  }
+
+  public String toString(){
+    return ""+numerator+"/"+denominator;
   }
 
 }
