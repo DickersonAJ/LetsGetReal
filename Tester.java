@@ -39,6 +39,7 @@ public class Tester {
     System.out.println(dog.getValue());
     System.out.println(mantisShrimp.getNumerator());
     System.out.println(mantisShrimp.getDenominator());
+    System.out.println(mantisShrimp.reciprocal());
   }
 
 }
