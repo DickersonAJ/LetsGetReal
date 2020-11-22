@@ -44,9 +44,12 @@ public class Tester {
     System.out.println(mantisShrimp.equals(dog));
     System.out.println(RationalNumber.gcd(210, 45));
     System.out.println(RationalNumber.gcd(5, 2));
+    System.out.println(RationalNumber.gcd(-18, 27));
     RationalNumber triceratops = new RationalNumber(6, 2);
     System.out.println(triceratops);
     System.out.println(RationalNumber.gcd(triceratops.getNumerator(), triceratops.getDenominator()));
+    System.out.println(dog.multiply(monkey));
+    System.out.println(dog.divide(monkey));
   }
 
 }

@@ -10,12 +10,12 @@ public class RationalNumber extends RealNumber{
     else if (deno < 0) {
       numerator = 0 - nume;
       denominator = 0 - deno;
-      //reduce();
+      reduce();
     }
     else {
       numerator = nume;
       denominator = deno;
-      //reduce();
+      reduce();
     }
   }
 
@@ -45,6 +45,12 @@ public class RationalNumber extends RealNumber{
   }
 
   public static int gcd(int a, int b){
+    if (a<0) {
+      return gcd(-a,b);
+    }
+    if (a<0) {
+      return gcd(a,-b);
+    }
     if (a<b) {
       return gcd(b,a);
     }
@@ -59,6 +65,16 @@ public class RationalNumber extends RealNumber{
     int gcd = gcd(numerator, denominator);
     numerator = numerator/gcd;
     denominator = denominator/gcd;
+  }
+
+  public RationalNumber multiply(RationalNumber other){
+    RationalNumber product = new RationalNumber(numerator * other.getNumerator(), denominator * other.getDenominator());
+    return product;
+  }
+
+  public RationalNumber divide(RationalNumber other){
+    RationalNumber product = new RationalNumber(numerator * other.getDenominator(), denominator * other.getNumerator());
+    return product;
   }
 
 }
