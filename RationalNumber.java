@@ -77,4 +77,18 @@ public class RationalNumber extends RealNumber{
     return product;
   }
 
+  public RationalNumber add(RationalNumber other){
+    int den = denominator * other.getDenominator();
+    int num = numerator * den + other.getNumerator() * den;
+    RationalNumber sum = new RationalNumber(num, den);
+    return sum;
+  }
+
+  public RationalNumber subtract(RationalNumber other){
+    int den = denominator * other.getDenominator();
+    int num = numerator * den - other.getNumerator() * den;
+    RationalNumber sum = new RationalNumber(num, den);
+    return sum;
+  }
+
 }

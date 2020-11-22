@@ -50,6 +50,8 @@ public class Tester {
     System.out.println(RationalNumber.gcd(triceratops.getNumerator(), triceratops.getDenominator()));
     System.out.println(dog.multiply(monkey));
     System.out.println(dog.divide(monkey));
+    System.out.println(dog.add(monkey));
+    System.out.println(dog.subtract(monkey));
   }
 
 }
