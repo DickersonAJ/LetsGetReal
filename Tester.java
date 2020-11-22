@@ -40,7 +40,13 @@ public class Tester {
     System.out.println(mantisShrimp.getNumerator());
     System.out.println(mantisShrimp.getDenominator());
     System.out.println(mantisShrimp.reciprocal());
+    System.out.println(mantisShrimp.equals(monkey));
+    System.out.println(mantisShrimp.equals(dog));
     System.out.println(RationalNumber.gcd(210, 45));
+    System.out.println(RationalNumber.gcd(5, 2));
+    RationalNumber triceratops = new RationalNumber(6, 2);
+    System.out.println(triceratops);
+    System.out.println(RationalNumber.gcd(triceratops.getNumerator(), triceratops.getDenominator()));
   }
 
 }

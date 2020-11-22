@@ -10,10 +10,12 @@ public class RationalNumber extends RealNumber{
     else if (deno < 0) {
       numerator = 0 - nume;
       denominator = 0 - deno;
+      //reduce();
     }
     else {
       numerator = nume;
       denominator = deno;
+      //reduce();
     }
   }
 
@@ -34,6 +36,10 @@ public class RationalNumber extends RealNumber{
     return r;
   }
 
+  public boolean equals(RationalNumber other){
+    return (numerator == other.getNumerator() && denominator == other.getDenominator());
+  }
+
   public String toString(){
     return ""+numerator+"/"+denominator;
   }
@@ -47,6 +53,12 @@ public class RationalNumber extends RealNumber{
       return b;
     }
     return gcd(b,r);
+  }
+
+  private void reduce(){
+    int gcd = gcd(numerator, denominator);
+    numerator = numerator/gcd;
+    denominator = denominator/gcd;
   }
 
 }
