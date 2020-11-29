@@ -52,6 +52,8 @@ public class Tester {
     System.out.println(dog.divide(monkey));
     System.out.println(dog.add(monkey));
     System.out.println(dog.subtract(monkey));
+    RationalNumber velociraptor = new RationalNumber(0, 3);
+    System.out.println(velociraptor);
   }
 
 }

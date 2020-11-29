@@ -11,6 +11,10 @@ public class RationalNumber extends Number{
       denominator = 0 - deno;
       reduce();
     }
+    else if (nume == 0) {
+      numerator = 0;
+      denominator = deno;
+    }
     else {
       numerator = nume;
       denominator = deno;
@@ -40,6 +44,12 @@ public class RationalNumber extends Number{
   }
 
   public String toString(){
+    if (numerator == 0) {
+      return "0";
+    }
+    if (denominator == 1) {
+      return ""+numerator;
+    }
     return ""+numerator+"/"+denominator;
   }
 
