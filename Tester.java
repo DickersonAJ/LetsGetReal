@@ -54,6 +54,13 @@ public class Tester {
     System.out.println(dog.subtract(monkey));
     RationalNumber velociraptor = new RationalNumber(0, 3);
     System.out.println(velociraptor);
+    System.out.println("compareTo Tester");
+    System.out.println(velociraptor.compareTo(triceratops));
+    System.out.println(triceratops.compareTo(velociraptor));
+    System.out.println(triceratops.compareTo(triceratops));
+    System.out.println(x.compareTo(triceratops));
+    System.out.println(triceratops.compareTo(x));
+    System.out.println(x.compareTo(y));
   }
 
 }
